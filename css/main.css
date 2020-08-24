@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Noto Sans SC";
+}
+
+a {
+    color: black;
 }
 
 li {
@@ -86,22 +91,28 @@ body {
 }
 
 .mContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
     background-color: #f5f5f5;
 }
 
+
+/* articleTopper build */
+
 .articleTopper {
     width: 990px;
     height: 320px;
-    background-color: #dddddd;
+    background-color: #f1f1f1;
     display: flex;
     align-items: center;
 }
 
 .articleTopper .atContainer {
     height: 220px;
-    background-color: #aaa;
     width: 100%;
     padding: 0 40px;
     display: flex;
@@ -113,7 +124,6 @@ body {
     height: 120px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .articleTopper .atContainer .upper .u-l {
@@ -123,17 +133,89 @@ body {
     justify-content: center;
 }
 
+.articleTopper .atContainer .upper .u-l .tNumber {
+    font-size: 12px;
+    color: #E60012;
+}
+
+.articleTopper .atContainer .upper .u-l h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
 .articleTopper .atContainer .upper img {
     width: 200px;
     height: 120px;
 }
 
 .articleTopper .atContainer .miner {
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
 }
 
+.articleTopper .atContainer .miner .tag {
+    font-size: 14px;
+    color: #E60012;
+}
+
+.articleTopper .atContainer .miner .date {
+    font-size: 14px;
+    color: #8a8b8c;
+}
+
 .articleTopper .atContainer .downer {
-    background-color: #bbb;
+    margin: 0;
+}
+
+.articleTopper .atContainer .downer .des {
+    font-size: 14px;
+    color: #4b4c4d;
+}
+
+.articleTopper .atContainer .downer .des a {
+    font-size: 14px;
+    color: #E60012;
+}
+
+
+/* topicEnter build */
+
+.topicEnter {
+    width: 590px;
+    height: 320px;
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+}
+
+.topicEnter .teContainer {
+    height: 220px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /* background-color: #e4e4e4; */
+}
+
+.topicEnter .teContainer .topicCover img {
+    width: 166px;
+    height: 220px;
+}
+
+.topicEnter .teContainer .t-r {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topicEnter .teContainer .t-r .topic {
+    font-size: 12px;
+    color: #E60012;
+}
+
+.topicEnter .teContainer .t-r .topicTitle {
+    font-size: 20px;
+    font-weight: 500;
 }
